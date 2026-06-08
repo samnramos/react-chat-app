@@ -1,4 +1,7 @@
-//import 
+import {useState} from 'react';
+
+
+
 
 const Message = ({text}) => {
 
@@ -14,28 +17,43 @@ const App = () => {
     // buisnesss logic
     //
 
-    const messages = [
+    /*
+   const messages = [
         "Argentina",
         "Bolivia",
         "Cambodia",
     ];
+    */
+
+    const [messages, setMessages] = useState<string[]>([]);
 
     return <>
-        <h1>
-            Chatroom
-        </h1>
+    <h1>
+        Chatroom
+    </h1>
 
-        {
-            messages.map(
-                (text) => <Message text = {text} />
-                )
-        }
+    {
+        messages.map(
+            (text, index) => <Message key = {index} text = {text} />
+        )
+    }
 
-        <input />
-        <button>
+    <form onSubmit = {(event) => {
+        event.preventDefault();
+        const new_message = event.target.incoming_text.value;
+        setMessages([...messages, new_message]);
+
+    
+        document.getElementById('incoming_text')!.value = '';
+    }}>
+
+        <input name = 'incoming_text' id = 'incoming_text' />
+        <button type = 'subtmit'>
             send
         </button>
+        </form>
+
     </>;
-}
+    }
 
 export default App;
