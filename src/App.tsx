@@ -1,16 +1,6 @@
 import {useState} from 'react';
-
-
-
-
-const Message = ({text}) => {
-
-    return <>
-     <p>
-        {text}
-     </p>
-    </>;
-}
+import Message from './Components/Message';
+import './App.css';
 
 const App = () => {
     //
@@ -43,12 +33,11 @@ const App = () => {
         const new_message = event.target.incoming_text.value;
         setMessages([...messages, new_message]);
 
-    
         document.getElementById('incoming_text')!.value = '';
     }}>
 
         <input name = 'incoming_text' id = 'incoming_text' />
-        <button type = 'subtmit'>
+        <button type = 'submit'>
             send
         </button>
         </form>
