@@ -1,6 +1,4 @@
-//Issues: The answer prompts won't work when asked questions like "Do you like music?"
-// "What time is it for you?"
-// There is also two chat boxes which I dont know how to make it to one chat box 
+// There is two chat boxes which I dont know how to make it to one chat box 
 //I tried using AI wont fix it properly
 
 import React, { useState, useEffect, useMemo, useRef } from 'react';
