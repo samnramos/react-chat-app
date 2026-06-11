@@ -1,7 +1,5 @@
-// There is two chat boxes which I dont know how to make it to one chat box 
-//I tried using AI wont fix it properly
-
 import React, { useState, useEffect, useMemo, useRef } from 'react';
+import '../App.css';
 
 interface MessageType {
   id: string;
@@ -123,101 +121,42 @@ const Chatroom: React.FC = () => {
   };
 
   return (
-    <div style={{
-      maxWidth: '500px',
-      margin: '20px auto',
-      border: '1px solid #ccc',
-      borderRadius: '8px',
-      display: 'flex',
-      flexDirection: 'column',
-      height: '500px',
-      fontFamily: 'sans-serif'
-    }}>
-      <div style={{
-        padding: '15px',
-        borderBottom: '1px solid #ccc',
-        backgroundColor: '#f5f5f5',
-        fontWeight: 'bold'
-      }}>
+    <div className="chat-container">
+      <div className="chat-header">
         Chatting with: {botName}
       </div>
 
-      <div style={{
-        flex: 1,
-        overflowY: 'auto',
-        padding: '15px',
-        display: 'flex',
-        flexDirection: 'column',
-        gap: '10px'
-      }}>
+      <div className="chat-messages-area">
         {messages.map((msg) => {
           const isUser = msg.sender === 'user';
           return (
-            <div key={msg.id} style={{
-              display: 'flex',
-              flexDirection: 'column',
-              alignItems: isUser ? 'flex-end' : 'flex-start'
-            }}>
-              <span style={{ fontSize: '12px', color: '#666', marginBottom: '2px' }}>
-                {isUser ? 'You' : botName}
-              </span>
-              <div style={{
-                backgroundColor: isUser ? '#007bff' : '#e9ecef',
-                color: isUser ? '#fff' : '#000',
-                padding: '10px 14px',
-                borderRadius: '12px',
-                maxWidth: '75%',
-                wordBreak: 'break-word'
-              }}>
-                {msg.text}
+            <div 
+              key={msg.id} 
+              className={`message-wrapper ${isUser ? 'user' : 'bot'}`}
+            >
+              <div className={`message-bubble ${isUser ? 'user-bubble' : 'bot-bubble'}`}>
+                <strong>{isUser ? 'You' : botName}:</strong> {msg.text}
               </div>
             </div>
           );
         })}
         {isTyping && (
-          <div style={{
-            alignSelf: 'flex-start',
-            color: '#888',
-            fontSize: '14px',
-            fontStyle: 'italic'
-          }}>
+          <div className="chat-typing-indicator">
             {botName} is typing...
           </div>
         )}
         <div ref={messagesEndRef} />
       </div>
 
-      <form onSubmit={handleSendMessage} style={{
-        display: 'flex',
-        borderTop: '1px solid #ccc',
-        padding: '10px'
-      }}>
+      <form onSubmit={handleSendMessage} className="chat-form">
         <input
           type="text"
           value={inputValue}
           onChange={(e) => setInputValue(e.target.value)}
           placeholder="Type a message..."
-          style={{
-            flex: 1,
-            padding: '10px',
-            border: '1px solid #ccc',
-            borderRadius: '4px',
-            marginRight: '10px',
-            fontSize: '16px'
-          }}
+          className="chat-input"
         />
-        <button
-          type="submit"
-          style={{
-            padding: '10px 20px',
-            backgroundColor: '#007bff',
-            color: 'white',
-            border: 'none',
-            borderRadius: '4px',
-            cursor: 'pointer',
-            fontSize: '16px'
-          }}
-        >
+        <button type="submit" className="chat-submit-btn">
           Send
         </button>
       </form>
