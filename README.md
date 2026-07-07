@@ -10,6 +10,7 @@ Responses
     "I love music! What's your favorite genre?",
     "Music is life! Do you have a favorite artist?",
     "Absolutely! Music can really set the mood. What do you like to listen to?"
+
 "up to": 
     "Just chatting with you!",
     "Not much, just hanging out.",
