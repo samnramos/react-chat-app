@@ -33,6 +33,7 @@ Responses
 "thanks": ["You're very welcome!", "No problem at all!", "Anytime!"]
 
 Other questions:
+
 "That sounds interesting, tell me more!",
 
 "Oh wow, I didn't know that.",
