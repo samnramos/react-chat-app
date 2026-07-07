@@ -1,10 +1,10 @@
-Practice Chat App
+================================================Practice Chat App==============================================================
 
-Instructions
+Introduction
 
 A chat bot where you can ask it about the time, music, or even how it's doing!
 
-Responses
+====================================================Responses==================================================================
 
 "music": 
     "I love music! What's your favorite genre?",
