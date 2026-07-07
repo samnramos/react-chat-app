@@ -32,12 +32,21 @@ Responses
 
 "thanks": ["You're very welcome!", "No problem at all!", "Anytime!"]
 
+Other questions:
 "That sounds interesting, tell me more!",
+
 "Oh wow, I didn't know that.",
+
 "That makes total sense.",
+
 "Can you clarify what you mean by that?",
+
 "Honestly, I completely agree with you.",
+
 "That's a unique perspective, I like it!",
+
 "I see where you're coming from, but I have a different take on it.",
+
 "That's a great point, I hadn't thought of it that way before.",
+
 "I can understand why you feel that way."
