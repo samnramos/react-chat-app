@@ -23,9 +23,13 @@ Responses
     "Nothing much, what about you?"
     
 "hello": ["Hey there! How's it going?", "Hello! Nice to hear from you.", "Hi! What's up?"],
+
 "hi": ["Hi! What are you up to?", "Hey!", "Hello there!"],
+
 "hey": ["Hey! What's new?", "Hi! How are you?"],
+
 "bye": ["Goodbye!", "See ya later!", "Bye! Have a great day!"],
+
 "thanks": ["You're very welcome!", "No problem at all!", "Anytime!"]
 
 "That sounds interesting, tell me more!",
