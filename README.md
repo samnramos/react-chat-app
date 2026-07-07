@@ -1,47 +1,38 @@
-====================================Practice Chat App=================================
+Practice Chat App
 
-======================================Instructions====================================
+Instructions
 
 A chat bot where you can ask it about the time, music, or even how it's doing!
 
-=======================================Responses======================================
+Responses
 
-const RESPONSE_RULES: Record<string, string[]> = {
-  "music": [
+"music": 
     "I love music! What's your favorite genre?",
     "Music is life! Do you have a favorite artist?",
     "Absolutely! Music can really set the mood. What do you like to listen to?"
-  ],
-  "time": [
-    "I don't have a watch, but it's always chat time here!",
-    "Time is just a concept for me, but I'm always here to chat!"
-  ],
-  "up to": [
+"up to": 
     "Just chatting with you!",
     "Not much, just hanging out.",
     "Just here to talk!"
-  ],
-  "how are you": [
+  
+"how are you": 
     "I'm doing great, thanks for asking!",
     "Pretty good! How about you?",
     "Not bad, just chilling.",
     "Nothing much, what about you?"
-  ],
-  "hello": ["Hey there! How's it going?", "Hello! Nice to hear from you.", "Hi! What's up?"],
-  "hi": ["Hi! What are you up to?", "Hey!", "Hello there!"],
-  "hey": ["Hey! What's new?", "Hi! How are you?"],
-  "bye": ["Goodbye!", "See ya later!", "Bye! Have a great day!"],
-  "thanks": ["You're very welcome!", "No problem at all!", "Anytime!"]
-};
+    
+"hello": ["Hey there! How's it going?", "Hello! Nice to hear from you.", "Hi! What's up?"],
+"hi": ["Hi! What are you up to?", "Hey!", "Hello there!"],
+"hey": ["Hey! What's new?", "Hi! How are you?"],
+"bye": ["Goodbye!", "See ya later!", "Bye! Have a great day!"],
+"thanks": ["You're very welcome!", "No problem at all!", "Anytime!"]
 
-const DEFAULT_RESPONSES: string[] = [
-  "That sounds interesting, tell me more!",
-  "Oh wow, I didn't know that.",
-  "That makes total sense.",
-  "Can you clarify what you mean by that?",
-  "Honestly, I completely agree with you.",
-  "That's a unique perspective, I like it!",
-  "I see where you're coming from, but I have a different take on it.",
-  "That's a great point, I hadn't thought of it that way before.",
-  "I can understand why you feel that way."
-];
+"That sounds interesting, tell me more!",
+"Oh wow, I didn't know that.",
+"That makes total sense.",
+"Can you clarify what you mean by that?",
+"Honestly, I completely agree with you.",
+"That's a unique perspective, I like it!",
+"I see where you're coming from, but I have a different take on it.",
+"That's a great point, I hadn't thought of it that way before.",
+"I can understand why you feel that way."
