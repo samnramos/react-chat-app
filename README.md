@@ -1,73 +1,47 @@
-# React + TypeScript + Vite
+====================================Practice Chat App=================================
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+======================================Instructions====================================
 
-Currently, two official plugins are available:
+A chat bot where you can ask it about the time, music, or even how it's doing!
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+=======================================Responses======================================
 
-## React Compiler
+const RESPONSE_RULES: Record<string, string[]> = {
+  "music": [
+    "I love music! What's your favorite genre?",
+    "Music is life! Do you have a favorite artist?",
+    "Absolutely! Music can really set the mood. What do you like to listen to?"
+  ],
+  "time": [
+    "I don't have a watch, but it's always chat time here!",
+    "Time is just a concept for me, but I'm always here to chat!"
+  ],
+  "up to": [
+    "Just chatting with you!",
+    "Not much, just hanging out.",
+    "Just here to talk!"
+  ],
+  "how are you": [
+    "I'm doing great, thanks for asking!",
+    "Pretty good! How about you?",
+    "Not bad, just chilling.",
+    "Nothing much, what about you?"
+  ],
+  "hello": ["Hey there! How's it going?", "Hello! Nice to hear from you.", "Hi! What's up?"],
+  "hi": ["Hi! What are you up to?", "Hey!", "Hello there!"],
+  "hey": ["Hey! What's new?", "Hi! How are you?"],
+  "bye": ["Goodbye!", "See ya later!", "Bye! Have a great day!"],
+  "thanks": ["You're very welcome!", "No problem at all!", "Anytime!"]
+};
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
-
-```js
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-
-      // Remove tseslint.configs.recommended and replace with this
-      tseslint.configs.recommendedTypeChecked,
-      // Alternatively, use this for stricter rules
-      tseslint.configs.strictTypeChecked,
-      // Optionally, add this for stylistic rules
-      tseslint.configs.stylisticTypeChecked,
-
-      // Other configs...
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
-
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
-
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default defineConfig([
-  globalIgnores(['dist']),
-  {
-    files: ['**/*.{ts,tsx}'],
-    extends: [
-      // Other configs...
-      // Enable lint rules for React
-      reactX.configs['recommended-typescript'],
-      // Enable lint rules for React DOM
-      reactDom.configs.recommended,
-    ],
-    languageOptions: {
-      parserOptions: {
-        project: ['./tsconfig.node.json', './tsconfig.app.json'],
-        tsconfigRootDir: import.meta.dirname,
-      },
-      // other options...
-    },
-  },
-])
-```
+const DEFAULT_RESPONSES: string[] = [
+  "That sounds interesting, tell me more!",
+  "Oh wow, I didn't know that.",
+  "That makes total sense.",
+  "Can you clarify what you mean by that?",
+  "Honestly, I completely agree with you.",
+  "That's a unique perspective, I like it!",
+  "I see where you're coming from, but I have a different take on it.",
+  "That's a great point, I hadn't thought of it that way before.",
+  "I can understand why you feel that way."
+];
