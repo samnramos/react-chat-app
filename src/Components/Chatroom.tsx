@@ -20,7 +20,12 @@ const BOT_NAMES = [
   "Jordan Smith",
   "Milo Chen",
   "Sarah Parker",
-  "Daniel Lee"
+  "Daniel Lee",
+  "Arthur Morgan",
+  "John Marston",
+  "Joel Miller",
+  "Ellie Williams",
+  "Peter Parker"
 ];
 
 // Define the response rules for the bot based on keywords
