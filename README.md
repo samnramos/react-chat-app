@@ -1,10 +1,21 @@
-Practice Chat App
+## Practice Chat App
 
-Introduction
+A simple chat app built with plain React (Vite + TypeScript) — no Ionic, no form library. It handles form input the vanilla way (preventDefault and reading the value straight from the DOM), which is the "before" example we later improve on.
 
-A chat bot where you can ask it about the time, music, or even how it's doing!
+Stack: React + Vite, with @faker-js/faker for fake usernames
+See src/App.tsx for the input handling referenced in the June 30 deck
+Compare with ../ionic-chat-app, the Ionic version of the same idea
 
-Responses
+## Run
+yarn install
+yarn dev
+
+## How to use 
+
+1. Input a message you want to start the conversation with
+2. depending on your input it should give you one of these responses
+
+## Responses
 
 "music": 
     "I love music! What's your favorite genre?",
