@@ -8,6 +8,7 @@ Compare with ../ionic-chat-app, the Ionic version of the same idea
 
 ## Run
 yarn install
+
 yarn dev
 
 ## How to use 
