@@ -14,7 +14,7 @@ yarn dev
 ## How to use 
 
 1. Input a message you want to start the conversation with
-2. depending on your input it should give you one of these responses
+2. depending on your input is, it should give you one of these responses
 
 ## Responses
 
