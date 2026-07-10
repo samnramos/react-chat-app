@@ -1,6 +1,6 @@
 ## Practice Chat App
 
-A simple chat app built with plain React (Vite + TypeScript) — no Ionic, no form library. It handles form input the vanilla way (preventDefault and reading the value straight from the DOM), which is the "before" example we later improve on.
+A simple chat app built with plain React (Vite + TypeScript) — no Ionic, no form library. It handles form input the vanilla way (preventDefault and reading the value straight from the DOM)
 
 Stack: React + Vite, with @faker-js/faker for fake usernames
 See src/App.tsx for the input handling referenced in the June 30 deck
