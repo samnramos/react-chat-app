@@ -44,7 +44,7 @@ yarn dev
 
 "thanks": ["You're very welcome!", "No problem at all!", "Anytime!"]
 
-Other questions:
+When you input other questions:
 
 "That sounds interesting, tell me more!",
 
