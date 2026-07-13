@@ -1,5 +1,3 @@
-//use of AI generated codes
-
 import React, { useState, useEffect, useMemo, useRef } from 'react';
 import '../App.css';
 
