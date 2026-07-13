@@ -11,6 +11,13 @@ yarn install
 
 yarn dev
 
+----Chat Start for Browser----
+
+After running `yarn dev` in the root terminal:
+
+1. Copy the localhost link into the browser.
+2. Start Chatting!
+
 ## How to use 
 
 1. Input a message you want to start the conversation with
@@ -63,3 +70,4 @@ When you input other questions:
 "That's a great point, I hadn't thought of it that way before.",
 
 "I can understand why you feel that way."
+
