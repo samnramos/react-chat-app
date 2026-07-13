@@ -16,7 +16,8 @@ yarn dev
 After running `yarn dev` in the root terminal:
 
 1. Copy the localhost link into the browser.
-2. Start Chatting!
+   [localhost:5137](http://localhost:5173/)
+3. Start Chatting!
 
 ## How to use 
 
