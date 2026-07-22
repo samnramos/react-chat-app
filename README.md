@@ -11,7 +11,7 @@ yarn install
 
 yarn dev
 
-----Chat Start for Browser----
+## Chat Start for Browser 
 
 After running `yarn dev` in the root terminal:
 
