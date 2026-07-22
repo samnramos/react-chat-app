@@ -74,3 +74,6 @@ When you input other questions:
 
 "I can understand why you feel that way."
 
+## AI Disclosure
+
+Generative AI (Google/ChatGPT) was utilized during data preprocessing to assist with writing Python code. Specifically, the AI provided a script to map NYC United Hospital Fund (UHF) geographic codes (Geo Join ID) to their respective NYC boroughs based on their leading digit. All AI-generated code was reviewed, debugged, and verified by the author before integration.
